@@ -10,6 +10,10 @@ cc.Class({
             default: null,
             type: cc.Node
         },
+        panel: {
+            default: null,
+            type: cc.Node
+        },
         btnPrev: {
             default: null,
             type: cc.Node
@@ -26,66 +30,44 @@ cc.Class({
         // 当前索引值
         this._index = 1;
         // 是否可切换
-        this._isSwiper = false;
-        // 是否是点击
-        this._isClick = false;
+        this._isSwiper = true;
     },
 
     onLoad() {
         this.btnPrev.on(cc.Node.EventType.TOUCH_END, this.handlePrev, this);
         this.btnNext.on(cc.Node.EventType.TOUCH_END, this.handleNext, this);
 
-        this.swiper.on(cc.Node.EventType.TOUCH_START, this.handleStart, this);
-        this.swiper.on(cc.Node.EventType.TOUCH_MOVE, this.handleMove, this);
-        this.swiper.on(cc.Node.EventType.TOUCH_END, this.handleEnd, this);
+        this.panel.on(cc.Node.EventType.TOUCH_END, this.handleEnd, this);
     },
 
     start() {
-        this.list.map((item, index, arr) => {
-            const x = item.x;
-            const y = item.y;
+        this.aniBtn('btnPrev', -20);
 
-            item.opacity = 0;
+        this.aniBtn('btnNext', 20);
+    },
 
-            const action = cc.sequence(
-                cc.delayTime(this._duration * index),
-                cc.place(cc.v2(x - 50, y)),
-                cc.spawn(
-                    cc.moveTo(this._duration, cc.v2(x, y)),
-                    cc.fadeIn(this._duration)
-                ),
-                cc.place(cc.v2(x, y)),
-                cc.callFunc(() => {
-                    if (index === arr.length - 1) {
-                        this._isSwiper = true;
-                    }
-                }, this)
-            );
+    // 按钮动画
+    aniBtn(btn, offsetX) {
+        const action = cc.repeatForever(
+            cc.sequence(
+                cc.moveBy(this._duration, offsetX, 0),
+                cc.moveBy(this._duration, -offsetX, 0)
+            )
+        );
 
-            item.runAction(action);
-
-            item.on(cc.Node.EventType.TOUCH_END, (evt) => {
-                this.handleChoose(evt, index);
-            }, this);
-        });
+        this[btn].runAction(action);
     },
 
     // 选择图片
-    handleChoose(evt, index) {
-        this.scheduleOnce(() => {
-            if (!this._isSwiper || !this._isClick) {
-                return;
-            }
+    handleChoose(index) {
+        const customEvent = new cc.Event.EventCustom('choosePuzzle', true);
 
-            const customEvent = new cc.Event.EventCustom('choosePuzzle', true);
+        customEvent.setUserData({
+            msg: '选择图片',
+            index
+        });
 
-            customEvent.setUserData({
-                msg: '选择图片',
-                index
-            });
-
-            this.node.dispatchEvent(customEvent);
-        }, 0.1);
+        this.node.dispatchEvent(customEvent);
     },
 
     // 上一页
@@ -125,21 +107,10 @@ cc.Class({
             cc.place(cc.v2(offsetX * index, y)),
             cc.callFunc(() => {
                 this._isSwiper = true;
-                this._isClick = true;
             }, this)
         );
 
         this.swiper.runAction(action);
-    },
-
-    // 触摸开始
-    handleStart(evt) {
-        this._isClick = false;
-    },
-
-    // 触摸移动
-    handleMove(evt) {
-
     },
 
     // 触摸结束
@@ -147,9 +118,10 @@ cc.Class({
         const startLoc = evt.getStartLocation();
         const endLoc = evt.getLocation();
 
-        this._isClick = startLoc.equals(endLoc);
+        cc.log(startLoc.equals(endLoc));
 
-        if (!this._isClick) {
+        // 判断两个向量是否相等
+        if (!startLoc.equals(endLoc)) {
             const span = endLoc.sub(startLoc);
 
             //认定为水平方向滑动
@@ -162,6 +134,10 @@ cc.Class({
             }
         } else {
             const index = this.getIndexByPoint(endLoc);
+
+            if (index !== null) {
+                this.handleChoose(index);
+            }
         }
     },
 
@@ -172,8 +148,8 @@ cc.Class({
     getIndexByPoint(point) {
         let itemIndex = null;
 
-        this.list.filter((item, index) => {
-            const polygonCollider = item.getChildByName('collider').getComponent(cc.PolygonCollider);
+        this.list.map((item, index) => {
+            const polygonCollider = item.getComponent(cc.PolygonCollider);
 
             if (cc.Intersection.pointInPolygon(point, polygonCollider.world.points)) {
                 itemIndex = index;
@@ -181,5 +157,5 @@ cc.Class({
         });
 
         return itemIndex;
-    },
+    }
 });

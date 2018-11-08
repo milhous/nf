@@ -270,8 +270,8 @@
     "relativePath": "texture/autoAtlas"
   },
   "b19ef446-c737-4db1-afd3-824d792fa10e": {
-    "asset": 1541686456618,
-    "meta": 1541686456625,
+    "asset": 1541690672934,
+    "meta": 1541690672951,
     "relativePath": "scene/main.fire"
   },
   "c123ab29-16e7-448b-8ff1-2ce0c2677bff": {
@@ -368,11 +368,6 @@
     "asset": 1541305472000,
     "meta": 1541517393345,
     "relativePath": "texture/puzzle/AutoAtlas.pac"
-  },
-  "2b575cc8-9829-4c07-9241-5b102345c37a": {
-    "asset": 1541479823000,
-    "meta": 1541517393180,
-    "relativePath": "script/puzzle.js"
   },
   "ae53fd13-4789-451d-ba8d-f8a852334b95": {
     "asset": 1541481007000,
@@ -504,11 +499,6 @@
     "meta": 1541552097031,
     "relativePath": "texture/autoAtlas/btn-prev.png"
   },
-  "96d5a891-50cd-4220-ad0e-3df7bd7eb100": {
-    "asset": 1541609271134,
-    "meta": 1541609272746,
-    "relativePath": "script/choose.js"
-  },
   "3bc486e9-fce8-4fd3-bf39-68b8be1f4ffd": {
     "asset": 1541609674584,
     "meta": 1541609706240,
@@ -518,16 +508,6 @@
     "asset": 1541609649543,
     "meta": 1541609706243,
     "relativePath": "texture/autoAtlas/word-scene2_1.png"
-  },
-  "11817432-7ffc-4529-bfb4-51061a8ac881": {
-    "asset": 1541610253856,
-    "meta": 1541610253854,
-    "relativePath": "video"
-  },
-  "10f68d55-89c2-4853-93dd-5c6a0870dd1f": {
-    "asset": 1541387838000,
-    "meta": 1541610254179,
-    "relativePath": "video/video.mp4"
   },
   "0ab4f43a-f678-411d-a244-6c78957086f9": {
     "asset": 1541610268841,
@@ -549,9 +529,19 @@
     "meta": 1541614255550,
     "relativePath": "texture/preview.jpg"
   },
+  "96d5a891-50cd-4220-ad0e-3df7bd7eb100": {
+    "asset": 1541688485825,
+    "meta": 1541688487235,
+    "relativePath": "script/choose.js"
+  },
+  "2b575cc8-9829-4c07-9241-5b102345c37a": {
+    "asset": 1541693673942,
+    "meta": 1541693675932,
+    "relativePath": "script/puzzle.js"
+  },
   "d793d277-32f1-4087-a97c-bd86741d508d": {
-    "asset": 1541685772162,
-    "meta": 1541686148389,
+    "asset": 1541693915230,
+    "meta": 1541693917043,
     "relativePath": "script/main.js"
   }
 }

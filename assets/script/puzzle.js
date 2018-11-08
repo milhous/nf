@@ -28,6 +28,9 @@ cc.Class({
         // 块编号
         this._id = [0, 1, 2, 3, 4, 5];
 
+        // 是否移动
+        this._isMove = true;
+
         // 起始块
         this._startBlock = null;
     },
@@ -44,6 +47,10 @@ cc.Class({
 
     // 选中拼图
     handleStart(evt) {
+        if (!this._isMove) {
+            return;
+        }
+
         this._startBlock = null;
 
         const touchLoc = evt.touch.getLocation();
@@ -60,6 +67,10 @@ cc.Class({
 
     // 放置拼图
     handleEnd(evt) {
+        if (!this._isMove) {
+            return;
+        }
+        
         const touchLoc = evt.touch.getLocation();
 
         const block = this.getBlockByPoint(touchLoc);
@@ -170,6 +181,8 @@ cc.Class({
         });
 
         if (arr.toString() === this._id.toString()) {
+            this._isMove = false;
+
             const action = cc.sequence(
                 cc.delayTime(1),
                 cc.callFunc(() => {

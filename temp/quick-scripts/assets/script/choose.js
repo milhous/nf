@@ -16,6 +16,10 @@ cc.Class({
             default: null,
             type: cc.Node
         },
+        panel: {
+            default: null,
+            type: cc.Node
+        },
         btnPrev: {
             default: null,
             type: cc.Node
@@ -32,60 +36,39 @@ cc.Class({
         // 当前索引值
         this._index = 1;
         // 是否可切换
-        this._isSwiper = false;
-        // 是否是点击
-        this._isClick = false;
+        this._isSwiper = true;
     },
     onLoad: function onLoad() {
         this.btnPrev.on(cc.Node.EventType.TOUCH_END, this.handlePrev, this);
         this.btnNext.on(cc.Node.EventType.TOUCH_END, this.handleNext, this);
 
-        this.swiper.on(cc.Node.EventType.TOUCH_START, this.handleStart, this);
-        this.swiper.on(cc.Node.EventType.TOUCH_MOVE, this.handleMove, this);
-        this.swiper.on(cc.Node.EventType.TOUCH_END, this.handleEnd, this);
+        this.panel.on(cc.Node.EventType.TOUCH_END, this.handleEnd, this);
     },
     start: function start() {
-        var _this = this;
+        this.aniBtn('btnPrev', -20);
 
-        this.list.map(function (item, index, arr) {
-            var x = item.x;
-            var y = item.y;
+        this.aniBtn('btnNext', 20);
+    },
 
-            item.opacity = 0;
 
-            var action = cc.sequence(cc.delayTime(_this._duration * index), cc.place(cc.v2(x - 50, y)), cc.spawn(cc.moveTo(_this._duration, cc.v2(x, y)), cc.fadeIn(_this._duration)), cc.place(cc.v2(x, y)), cc.callFunc(function () {
-                if (index === arr.length - 1) {
-                    _this._isSwiper = true;
-                }
-            }, _this));
+    // 按钮动画
+    aniBtn: function aniBtn(btn, offsetX) {
+        var action = cc.repeatForever(cc.sequence(cc.moveBy(this._duration, offsetX, 0), cc.moveBy(this._duration, -offsetX, 0)));
 
-            item.runAction(action);
-
-            item.on(cc.Node.EventType.TOUCH_END, function (evt) {
-                _this.handleChoose(evt, index);
-            }, _this);
-        });
+        this[btn].runAction(action);
     },
 
 
     // 选择图片
-    handleChoose: function handleChoose(evt, index) {
-        var _this2 = this;
+    handleChoose: function handleChoose(index) {
+        var customEvent = new cc.Event.EventCustom('choosePuzzle', true);
 
-        this.scheduleOnce(function () {
-            if (!_this2._isSwiper || !_this2._isClick) {
-                return;
-            }
+        customEvent.setUserData({
+            msg: '选择图片',
+            index: index
+        });
 
-            var customEvent = new cc.Event.EventCustom('choosePuzzle', true);
-
-            customEvent.setUserData({
-                msg: '选择图片',
-                index: index
-            });
-
-            _this2.node.dispatchEvent(customEvent);
-        }, 0.1);
+        this.node.dispatchEvent(customEvent);
     },
 
 
@@ -115,7 +98,7 @@ cc.Class({
 
     // 切换拼图
     swiperPuzzle: function swiperPuzzle() {
-        var _this3 = this;
+        var _this = this;
 
         var index = this.list.length - (4 - this._index);
         var x = this.swiper.x;
@@ -125,22 +108,11 @@ cc.Class({
         this._isSwiper = false;
 
         var action = cc.sequence(cc.place(cc.v2(x, y)), cc.moveTo(this._duration, cc.v2(offsetX * index, y)), cc.place(cc.v2(offsetX * index, y)), cc.callFunc(function () {
-            _this3._isSwiper = true;
-            _this3._isClick = true;
+            _this._isSwiper = true;
         }, this));
 
         this.swiper.runAction(action);
     },
-
-
-    // 触摸开始
-    handleStart: function handleStart(evt) {
-        this._isClick = false;
-    },
-
-
-    // 触摸移动
-    handleMove: function handleMove(evt) {},
 
 
     // 触摸结束
@@ -148,9 +120,10 @@ cc.Class({
         var startLoc = evt.getStartLocation();
         var endLoc = evt.getLocation();
 
-        this._isClick = startLoc.equals(endLoc);
+        cc.log(startLoc.equals(endLoc));
 
-        if (!this._isClick) {
+        // 判断两个向量是否相等
+        if (!startLoc.equals(endLoc)) {
             var span = endLoc.sub(startLoc);
 
             //认定为水平方向滑动
@@ -163,7 +136,32 @@ cc.Class({
                     this.handlePrev(evt);
                 }
             }
+        } else {
+            var index = this.getIndexByPoint(endLoc);
+
+            if (index !== null) {
+                this.handleChoose(index);
+            }
         }
+    },
+
+
+    /*
+     * 通过坐标获取对应索引值
+     * @param (object) point 坐标点
+     */
+    getIndexByPoint: function getIndexByPoint(point) {
+        var itemIndex = null;
+
+        this.list.map(function (item, index) {
+            var polygonCollider = item.getComponent(cc.PolygonCollider);
+
+            if (cc.Intersection.pointInPolygon(point, polygonCollider.world.points)) {
+                itemIndex = index;
+            }
+        });
+
+        return itemIndex;
     }
 });
 

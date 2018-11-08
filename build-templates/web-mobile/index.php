@@ -167,27 +167,123 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
+<html>
 
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <title>热雪来疯 赢双11免单机会</title>
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="landscape" />
+    <meta name="x5-orientation" content="landscape">
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app">
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+    <link href="style-mobile.css" rel="stylesheet" />
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript">
+    var link = '<?php echo $link; ?>';
+    var title = '热雪来疯，赢双11免单机会';
+    var desc = '参与互动，还可赢惊喜礼品';
+    var imgUrl = 'http://h5.yuncii.com/nf/share.jpg';
+
+    wx.config({
+        debug: false,
+        appId: '<?php echo SHAREAPPID; ?>',
+        link: '<?php echo $link; ?>',
+        timestamp: '<?php echo $timestamp; ?>',
+        nonceStr: '<?php echo $randomstr; ?>',
+        signature: '<?php echo $signature; ?>',
+        jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo']
+    });
+
+    wx.ready(function(){
+        // 自定义“分享到朋友圈”
+        wx.onMenuShareTimeline({
+            title: title,  
+            link: link,        
+            imgUrl: imgUrl,
+            success: function () {},
+            cancel: function () {}
+        });
+        // 自定义“分享到QQ空间”
+        wx.onMenuShareQZone({
+            title: title,
+            desc: desc,
+            link: link,
+            imgUrl: imgUrl,
+            success: function () {},
+            cancel: function () {}
+        });
+        // 自定义“分享给微信好友”
+        wx.onMenuShareAppMessage({
+            title: title,
+            desc: desc,
+            link: link,
+            imgUrl: imgUrl,
+            success: function () {},
+            cancel: function () {}
+        });
+        // 自定义分享给QQ好友”
+        wx.onMenuShareQQ({
+            title: title,
+            desc: desc,
+            link: link,
+            imgUrl: imgUrl,
+            success: function () {},
+            cancel: function () {}
+        });
+    });
+    </script>
 </head>
 <body>
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="splash">
+        <div class="progress-bar stripes">
+            <span style="width: 0%"></span>
+        </div>
+    </div>
+    <script src="src/settings.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    (function() {
+        // open web debugger console
+        if (typeof VConsole !== 'undefined') {
+            window.vConsole = new VConsole();
+        }
 
-    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
-	<script type="text/javascript">
-	wx.config({
-	    debug: true,
-	    appId: '<?php echo SHAREAPPID; ?>',
-	    link: '<?php echo $link; ?>',
-	    timestamp: '<?php echo $timestamp; ?>',
-	    nonceStr: '<?php echo $randomstr; ?>',
-	    signature: '<?php echo $signature; ?>',
-	    jsApiList: ['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo']
-	});
-	</script>
+        var splash = document.getElementById('splash');
+        splash.style.display = 'block';
+
+        var cocos2d = document.createElement('script');
+        cocos2d.async = true;
+        cocos2d.src = window._CCSettings.debug ? 'cocos2d-js.js' : 'cocos2d-js-min.js';
+
+        var engineLoaded = function() {
+            document.body.removeChild(cocos2d);
+            cocos2d.removeEventListener('load', engineLoaded, false);
+            window.boot();
+        };
+        cocos2d.addEventListener('load', engineLoaded, false);
+        document.body.appendChild(cocos2d);
+    })();
+    </script>
 </body>
 </html>

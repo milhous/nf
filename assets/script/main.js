@@ -23,8 +23,12 @@ cc.Class({
     extends: cc.Component,
 
     ctor() {
+        // 动画时间
+        this._duration = .3;
         // 场景索引值
         this._sceneIndex = 0;
+        // 用户ID
+        this._id = null;
     },
 
     properties: {
@@ -59,6 +63,14 @@ cc.Class({
         video: {
             default: null,
             type: cc.VideoPlayer
+        },
+        inputUsername: {
+            default: null,
+            type: cc.EditBox
+        },
+        inputMoblie: {
+            default: null,
+            type: cc.EditBox
         }
     },
 
@@ -83,11 +95,12 @@ cc.Class({
 
         this.video.node.on('ready-to-play', this.handleReady, this);
         this.video.node.on('clicked', this.handleClick, this);
+        this.video.node.on('completed', this.handleCompleted, this);
 
         this.node.on('nextScene', (evt) => {
             cc.log(evt.detail);
 
-            this.nextScene();
+            this.puzzleSucceed();
         });
 
         this.node.on('choosePuzzle', (evt) => {
@@ -106,13 +119,12 @@ cc.Class({
     // 准备视频
     handleReady(evt) {
         const video = evt;
+
         video.play();
 
-        document.addEventListener("WeixinJSBridgeReady", function() {
-            video.play();
+        document.addEventListener('WeixinJSBridgeReady', function() {
+            document.querySelector('.cocosVideo').play();
         });
-
-        cc.log('evt', evt);
     },
 
     // 用户点击
@@ -129,9 +141,47 @@ cc.Class({
         this.nextScene();
     },
 
+    // 播放完成
+    handleCompleted(evt) {
+        this.aniBtn('btnPass');
+    },
+
     // 提交表单
     handleSubmit() {
-        this.nextScene();
+        const req = /^(13[0-9]|14[5-9]|15[012356789]|166|17[0-8]|18[0-9]|19[8-9])[0-9]{8}$/;
+        const username = this.inputUsername.string;
+        const mobile = this.inputMoblie.string;
+
+        if (username === '') {
+            alert('请输入您的姓名');
+
+            return;
+        }
+
+        if (mobile === '') {
+            alert('请输入您的手机号码');
+
+            return;
+        } else if (!req.test(Number(mobile))) {
+            alert('请输入有效的手机号码');
+
+            return;
+        }
+
+        this.sendRequest({
+            path: 'recode_user.php',
+            method: 'POST',
+            data: {
+                name: username,
+                phone: mobile
+            }
+        }).then((data) => {
+            this._id = data.id;
+
+            this.nextScene();
+        }, (error) => {
+            alert(error);
+        });
     },
 
     // 加入互动
@@ -153,6 +203,22 @@ cc.Class({
         location.href = 'https://weapp.wemediacn.com/tnf/north/vipeak/to_auth_page?page_type=user_center';
     },
 
+    // 拼图成功
+    puzzleSucceed() {
+        this.sendRequest({
+            path: 'recode_game.php',
+            method: 'POST',
+            data: {
+                id: this._id,
+                status: 1
+            }
+        }).then((value) => {
+            this.nextScene();
+        }, (error) => {
+            alert(error);
+        });
+    },
+
     // 跳转下一个场景
     nextScene() {
         this._sceneIndex++;
@@ -172,6 +238,77 @@ cc.Class({
 
         this.scenes.map((obj) => {
             obj.node.active = obj.type === this._sceneIndex;
+        });
+    },
+
+    // 按钮动画
+    aniBtn(btn) {
+        const action = cc.repeatForever(
+            cc.sequence(
+                cc.scaleTo(this._duration, 1.1, 1.1),
+                cc.scaleTo(this._duration, 1, 1)
+            )
+        );
+
+        this[btn].runAction(action);
+    },
+
+    sendRequest({
+        path = '',
+        method = 'GET',
+        data = {},
+        extraUrl = 'http://h5.yuncii.com/nf/interface/'
+    }) {
+        return new Promise((resolve, reject) => {
+            const xhr = cc.loader.getXMLHttpRequest();
+            let requestURL = extraUrl + path;
+            let params = null;
+
+            if (typeof data === 'object') {
+                params = Object.keys(data).map(function(key) {
+                    return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
+                }).join('&');
+            }
+
+            xhr.timeout = 5000;
+
+            if (cc.sys.isNative) {
+                xhr.setRequestHeader("Accept-Encoding", "gzip,deflate", "text/html;charset=UTF-8");
+            }
+
+            switch (method) {
+                case 'GET':
+                    if (params !== null) {
+                        requestURL += params;
+                    }
+
+                    xhr.open(method, requestURL, true);
+
+                    break;
+                case 'POST':
+                    xhr.open(method, requestURL, true);
+
+                    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                    break;
+            }
+
+            xhr.onload = () => {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    cc.log("http res(" + xhr.responseText.length + "):" + xhr.responseText);
+
+                    return resolve(JSON.parse(xhr.responseText));
+                } else {
+                    reject(xhr.statusText);
+                }
+            };
+
+            xhr.onerror = () => {
+                reject(xhr.statusText);
+            };
+
+            xhr.send(params);
         });
     }
 });
