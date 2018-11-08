@@ -132,9 +132,17 @@ cc.Class({
 
         video.play();
 
-        document.addEventListener('WeixinJSBridgeReady', function () {
-            document.querySelector('.cocosVideo').play();
-        });
+        if (window.WeixinJSBridge) {
+            WeixinJSBridge.invoke('getNetworkType', {}, function () {
+                video.play();
+            }, false);
+        } else {
+            document.addEventListener('WeixinJSBridgeReady', function () {
+                WeixinJSBridge.invoke('getNetworkType', {}, function () {
+                    video.play();
+                });
+            }, false);
+        }
     },
 
 

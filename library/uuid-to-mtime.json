@@ -270,8 +270,8 @@
     "relativePath": "texture/autoAtlas"
   },
   "b19ef446-c737-4db1-afd3-824d792fa10e": {
-    "asset": 1541690672934,
-    "meta": 1541690672951,
+    "asset": 1541696070431,
+    "meta": 1541696070454,
     "relativePath": "scene/main.fire"
   },
   "c123ab29-16e7-448b-8ff1-2ce0c2677bff": {
@@ -504,11 +504,6 @@
     "meta": 1541609706240,
     "relativePath": "texture/autoAtlas/word-scene2_2.png"
   },
-  "9dbe1a5a-f8cb-4012-b5bf-94f7568e8307": {
-    "asset": 1541609649543,
-    "meta": 1541609706243,
-    "relativePath": "texture/autoAtlas/word-scene2_1.png"
-  },
   "0ab4f43a-f678-411d-a244-6c78957086f9": {
     "asset": 1541610268841,
     "meta": 1541610328953,
@@ -539,9 +534,14 @@
     "meta": 1541693675932,
     "relativePath": "script/puzzle.js"
   },
+  "9dbe1a5a-f8cb-4012-b5bf-94f7568e8307": {
+    "asset": 1541694804862,
+    "meta": 1541694891798,
+    "relativePath": "texture/autoAtlas/word-scene2_1.png"
+  },
   "d793d277-32f1-4087-a97c-bd86741d508d": {
-    "asset": 1541693915230,
-    "meta": 1541693917043,
+    "asset": 1541697560875,
+    "meta": 1541697563342,
     "relativePath": "script/main.js"
   }
 }

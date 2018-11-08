@@ -122,9 +122,17 @@ cc.Class({
 
         video.play();
 
-        document.addEventListener('WeixinJSBridgeReady', function() {
-            document.querySelector('.cocosVideo').play();
-        });
+        if (window.WeixinJSBridge) {
+            WeixinJSBridge.invoke('getNetworkType', {}, () => {
+                video.play();
+            }, false);
+        } else {
+            document.addEventListener('WeixinJSBridgeReady', () => {
+                WeixinJSBridge.invoke('getNetworkType', {}, () => {
+                    video.play();
+                });
+            }, false);
+        }
     },
 
     // 用户点击
