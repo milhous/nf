@@ -41,33 +41,33 @@ cc.Class({
     },
 
     start() {
-        // this.list.map((item, index, arr) => {
-        //     const x = item.x;
-        //     const y = item.y;
+        this.list.map((item, index, arr) => {
+            const x = item.x;
+            const y = item.y;
 
-        //     item.opacity = 0;
+            item.opacity = 0;
 
-        //     const action = cc.sequence(
-        //         cc.delayTime(this._duration * index),
-        //         cc.place(cc.v2(x - 50, y)),
-        //         cc.spawn(
-        //             cc.moveTo(this._duration, cc.v2(x, y)),
-        //             cc.fadeIn(this._duration)
-        //         ),
-        //         cc.place(cc.v2(x, y)),
-        //         cc.callFunc(() => {
-        //             if (index === arr.length - 1) {
-        //                 this._isSwiper = true;
-        //             }
-        //         }, this)
-        //     );
+            const action = cc.sequence(
+                cc.delayTime(this._duration * index),
+                cc.place(cc.v2(x - 50, y)),
+                cc.spawn(
+                    cc.moveTo(this._duration, cc.v2(x, y)),
+                    cc.fadeIn(this._duration)
+                ),
+                cc.place(cc.v2(x, y)),
+                cc.callFunc(() => {
+                    if (index === arr.length - 1) {
+                        this._isSwiper = true;
+                    }
+                }, this)
+            );
 
-        //     item.runAction(action);
+            item.runAction(action);
 
-        //     item.on(cc.Node.EventType.TOUCH_END, (evt) => {
-        //         this.handleChoose(evt, index);
-        //     }, this);
-        // });
+            item.on(cc.Node.EventType.TOUCH_END, (evt) => {
+                this.handleChoose(evt, index);
+            }, this);
+        });
     },
 
     // 选择图片
