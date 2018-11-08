@@ -57,3 +57,5 @@
 2018-11-08T14:00:28.138Z - normal: Run Application
 2018-11-08T14:00:28.615Z - success: preview server running at http://localhost:7456
 2018-11-08T14:00:33.535Z - normal: On the web is always keep the aspect ratio
+2018-11-08T14:09:09.076Z - normal: On the web is always keep the aspect ratio
+2018-11-08T14:12:16.721Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:5456

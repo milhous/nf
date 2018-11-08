@@ -92,7 +92,6 @@ cc.Class({
 
         this.video.node.on('ready-to-play', this.handleReady, this);
         this.video.node.on('clicked', this.handleClick, this);
-        this.video.node.on('completed', this.handleCompleted, this);
 
         this.node.on('nextScene', function (evt) {
             cc.log(evt.detail);
@@ -130,16 +129,6 @@ cc.Class({
         var video = evt;
 
         video.play();
-    },
-
-
-    // 播放完成
-    handleCompleted: function handleCompleted(evt) {
-        var video = evt;
-
-        video.destroy();
-
-        this.nextScene();
     },
 
 
