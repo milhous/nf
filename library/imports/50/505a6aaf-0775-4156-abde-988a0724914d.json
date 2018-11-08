@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg-succeed_desc",
+    "texture": "df26560d-c3a3-4bd1-af7b-7de23e233aed",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      836,
+      506
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      836,
+      506
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pic-puzzle3_block3",
+    "texture": "a8694ac6-748e-4916-a9a3-f45e7709f8d5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      210,
+      203
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      210,
+      203
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

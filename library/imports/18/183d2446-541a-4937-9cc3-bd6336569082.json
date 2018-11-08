@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg-join_title",
+    "texture": "de28648b-db3c-4cc8-a6cd-0eb8677ddb08",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      750,
+      428
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      750,
+      428
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

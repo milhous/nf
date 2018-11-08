@@ -1,0 +1,59 @@
+2018-11-08T14:00:25.712Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-08T14:00:25.714Z - normal: checking language setting...
+2018-11-08T14:00:25.714Z - normal: Language: zh
+2018-11-08T14:00:26.141Z - success: protocol editor-framework registered
+2018-11-08T14:00:26.141Z - success: protocol app registered
+2018-11-08T14:00:26.141Z - success: protocol theme registered
+2018-11-08T14:00:26.141Z - success: protocol packages registered
+2018-11-08T14:00:26.141Z - success: protocol unpack registerred
+2018-11-08T14:00:26.142Z - success: protocol disable-commonjs registerred
+2018-11-08T14:00:26.334Z - normal: connected!
+2018-11-08T14:00:26.336Z - normal: Check project /Users/milhous/Documents/work/cocos/nf
+2018-11-08T14:00:26.338Z - normal: Initializing project /Users/milhous/Documents/work/cocos/nf
+2018-11-08T14:00:26.341Z - normal: Initializing Cocos2d
+2018-11-08T14:00:26.850Z - normal: Initializing Asset Database
+2018-11-08T14:00:26.879Z - success: protocol uuid registerred
+2018-11-08T14:00:26.879Z - success: protocol db registerred
+2018-11-08T14:00:26.879Z - success: protocol thumbnail registerred
+2018-11-08T14:00:26.879Z - normal: Loading editor/builtin packages
+2018-11-08T14:00:27.002Z - success: assets loaded
+2018-11-08T14:00:27.005Z - success: builder loaded
+2018-11-08T14:00:27.007Z - success: cocos-analytics loaded
+2018-11-08T14:00:27.010Z - success: console loaded
+2018-11-08T14:00:27.035Z - success: fb-instant-games loaded
+2018-11-08T14:00:27.036Z - success: google-instant-games loaded
+2018-11-08T14:00:27.040Z - success: hierarchy loaded
+2018-11-08T14:00:27.043Z - success: inspector loaded
+2018-11-08T14:00:27.045Z - success: keystore loaded
+2018-11-08T14:00:27.049Z - success: node-library loaded
+2018-11-08T14:00:27.050Z - success: package-asset loaded
+2018-11-08T14:00:27.051Z - success: preferences loaded
+2018-11-08T14:00:27.053Z - success: project-exporter loaded
+2018-11-08T14:00:27.065Z - success: project-importer loaded
+2018-11-08T14:00:27.067Z - success: project-settings loaded
+2018-11-08T14:00:27.070Z - success: ui-kit loaded
+2018-11-08T14:00:27.073Z - success: scene loaded
+2018-11-08T14:00:27.074Z - success: sprite-editor loaded
+2018-11-08T14:00:27.077Z - success: store loaded
+2018-11-08T14:00:27.081Z - success: timeline loaded
+2018-11-08T14:00:27.081Z - normal: Loading builtin packages
+2018-11-08T14:00:27.103Z - success: asset-db-debugger loaded
+2018-11-08T14:00:27.104Z - success: color-picker loaded
+2018-11-08T14:00:27.174Z - success: google-play-instant loaded
+2018-11-08T14:00:27.179Z - success: jsb-adapter loaded
+2018-11-08T14:00:27.183Z - success: oppo-runtime loaded
+2018-11-08T14:00:27.187Z - success: package-manager loaded
+2018-11-08T14:00:27.277Z - success: qqplay-adapter loaded
+2018-11-08T14:00:27.286Z - success: sdkbox loaded
+2018-11-08T14:00:27.296Z - success: tester loaded
+2018-11-08T14:00:27.300Z - success: ui-grid loaded
+2018-11-08T14:00:27.308Z - success: ui-kit-preview-extra loaded
+2018-11-08T14:00:27.312Z - success: ui-kit-preview loaded
+2018-11-08T14:00:27.315Z - success: ui-tree loaded
+2018-11-08T14:00:27.320Z - success: vivo-runtime loaded
+2018-11-08T14:00:27.328Z - success: weapp-adapter loaded
+2018-11-08T14:00:28.083Z - normal: Loading packages
+2018-11-08T14:00:28.087Z - normal: Watching packages
+2018-11-08T14:00:28.138Z - normal: Run Application
+2018-11-08T14:00:28.615Z - success: preview server running at http://localhost:7456
+2018-11-08T14:00:33.535Z - normal: On the web is always keep the aspect ratio

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg-puzzle_pic",
+    "texture": "6ea5c494-0982-42b9-9ffb-266d0b24378f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      445,
+      636
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      445,
+      636
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

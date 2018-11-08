@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "btn-pass",
+    "texture": "0ab4f43a-f678-411d-a244-6c78957086f9",
+    "atlas": "",
+    "rect": [
+      0,
+      1,
+      351,
+      73
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      351,
+      74
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

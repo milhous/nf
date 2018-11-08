@@ -1,0 +1,15 @@
+{
+  "packedTextures": [
+    {
+      "path": "/Users/zhangxiao/Documents/cocos/tnf/temp/TexturePacker/texture/autoAtlas/AutoAtlas.pac/AutoAtlas-1.png",
+      "name": "AutoAtlas-1.png",
+      "size": "1024x1024"
+    },
+    {
+      "path": "/Users/zhangxiao/Documents/cocos/tnf/temp/TexturePacker/texture/autoAtlas/AutoAtlas.pac/AutoAtlas-2.png",
+      "name": "AutoAtlas-2.png",
+      "size": "1024x256"
+    }
+  ],
+  "unpackedTextures": []
+}
