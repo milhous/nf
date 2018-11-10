@@ -260,9 +260,7 @@
             <span style="width: 0%"></span>
         </div>
     </div>
-    <!-- <video id="video" src="video.mp4"  webkit-playsinline="true" x-webkit-airplay="allow" airplay="allow"  x5-video-orientation="portrait" 
-    x5-video-player-type="h5" x5-video-player-fullscreen="true"></video> -->
-    <!-- <video id="video" x5-video-player-fullscreen x-webkit-airplay webkit-playsinline playsinline src="video/video.mp4" preload style="position: absolute; left: 50%; top: 50%; z-index: 1000"></video> -->
+    <video id="video" width="750" height="435" preload="auto" webkit-playsinline="true" playsinline="true" x5-playsinline="true" x5-video-player-type="h5" x5-video-orientation="portrait" x-webkit-airplay="allow" airplay="allow" src="video/video.mp4"></video>
     <script src="src/settings.js" charset="utf-8"></script>
     <script src="main.js" charset="utf-8"></script>
     <script type="text/javascript">
@@ -286,6 +284,14 @@
         };
         cocos2d.addEventListener('load', engineLoaded, false);
         document.body.appendChild(cocos2d);
+    })();
+
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e27ab039720b77942cf601d41a236dd6";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
     })();
     </script>
 </body>

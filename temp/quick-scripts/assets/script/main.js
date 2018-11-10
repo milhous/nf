@@ -37,6 +37,10 @@ cc.Class({
         this._sceneIndex = 0;
         // 用户ID
         this._id = null;
+        // 视频
+        this._video = null;
+        // 是否播放
+        this._isPlay = false;
     },
 
 
@@ -71,7 +75,7 @@ cc.Class({
         },
         video: {
             default: null,
-            type: cc.VideoPlayer
+            type: cc.Sprite
         },
         inputUsername: {
             default: null,
@@ -104,10 +108,6 @@ cc.Class({
 
         this.btnPass.on(cc.Node.EventType.TOUCH_END, this.handlePass, this);
 
-        this.video.node.on('ready-to-play', this.handleReady, this);
-        this.video.node.on('clicked', this.handleClick, this);
-        this.video.node.on('completed', this.handleCompleted, this);
-
         this.node.on('nextScene', function (evt) {
             cc.log(evt.detail);
 
@@ -121,16 +121,40 @@ cc.Class({
 
             _this.nextScene();
         });
+
+        this.initVideo();
     },
     start: function start() {},
-    update: function update(dt) {},
+    update: function update(dt) {
+        if (this._isPlay && this._video) {
+            this.getVideoFrame();
+        }
+    },
 
 
-    // 准备视频
-    handleReady: function handleReady(evt) {
-        var video = evt;
+    // 初始化视频
+    initVideo: function initVideo() {
+        var _this2 = this;
 
-        video.play();
+        var video = document.getElementById('video');
+
+        this._video = video;
+
+        this.video.node.on(cc.Node.EventType.TOUCH_END, function () {
+            if (!_this2._isPlay) {
+                video.play();
+            }
+        }, this);
+
+        video.addEventListener('play', function () {
+            _this2._isPlay = true;
+        }, false);
+
+        video.addEventListener('ended', function () {
+            _this2._isPlay = false;
+
+            _this2.aniBtn('btnPass');
+        }, false);
 
         if (window.WeixinJSBridge) {
             WeixinJSBridge.invoke('getNetworkType', {}, function () {
@@ -146,31 +170,46 @@ cc.Class({
     },
 
 
-    // 用户点击
-    handleClick: function handleClick(evt) {
-        var video = evt;
+    // 获取视频图片帧
+    getVideoFrame: function getVideoFrame() {
+        var _this3 = this;
 
-        video.play();
+        var width = video.width;
+        var height = video.height;
+
+        var canvas = document.createElement('canvas');
+        canvas.width = Number(width);
+        canvas.height = Number(height);
+
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        var img = new Image();
+        img.src = canvas.toDataURL('image/jpeg');
+        img.onload = function () {
+            var texture = new cc.Texture2D();
+            texture.initWithElement(img);
+            texture.handleLoadedTexture();
+
+            var spriteFrame = new cc.SpriteFrame(texture);
+
+            _this3.video.spriteFrame = spriteFrame;
+        };
     },
 
 
     // 跳过视频
     handlePass: function handlePass(evt) {
-        this.video.destroy();
+        this._isPlay = false;
+        this._video.pause();
 
         this.nextScene();
     },
 
 
-    // 播放完成
-    handleCompleted: function handleCompleted(evt) {
-        this.aniBtn('btnPass');
-    },
-
-
     // 提交表单
     handleSubmit: function handleSubmit() {
-        var _this2 = this;
+        var _this4 = this;
 
         var req = /^(13[0-9]|14[5-9]|15[012356789]|166|17[0-8]|18[0-9]|19[8-9])[0-9]{8}$/;
         var username = this.inputUsername.string;
@@ -200,9 +239,9 @@ cc.Class({
                 phone: mobile
             }
         }).then(function (data) {
-            _this2._id = data.id;
+            _this4._id = data.id;
 
-            _this2.nextScene();
+            _this4.nextScene();
         }, function (error) {
             alert(error);
         });
@@ -233,7 +272,7 @@ cc.Class({
 
     // 拼图成功
     puzzleSucceed: function puzzleSucceed() {
-        var _this3 = this;
+        var _this5 = this;
 
         this.sendRequest({
             path: 'recode_game.php',
@@ -243,7 +282,7 @@ cc.Class({
                 status: 1
             }
         }).then(function (value) {
-            _this3.nextScene();
+            _this5.nextScene();
         }, function (error) {
             alert(error);
         });
@@ -252,19 +291,19 @@ cc.Class({
 
     // 跳转下一个场景
     nextScene: function nextScene() {
-        var _this4 = this;
+        var _this6 = this;
 
         this._sceneIndex++;
 
         this.scenes.map(function (obj) {
-            obj.node.active = obj.type === _this4._sceneIndex;
+            obj.node.active = obj.type === _this6._sceneIndex;
         });
     },
 
 
     // 跳转上一个场景
     prevScene: function prevScene() {
-        var _this5 = this;
+        var _this7 = this;
 
         this._sceneIndex--;
 
@@ -273,7 +312,7 @@ cc.Class({
         }
 
         this.scenes.map(function (obj) {
-            obj.node.active = obj.type === _this5._sceneIndex;
+            obj.node.active = obj.type === _this7._sceneIndex;
         });
     },
 

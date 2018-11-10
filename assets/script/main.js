@@ -29,6 +29,10 @@ cc.Class({
         this._sceneIndex = 0;
         // 用户ID
         this._id = null;
+        // 视频
+        this._video = null;
+        // 是否播放
+        this._isPlay = false;
     },
 
     properties: {
@@ -62,7 +66,7 @@ cc.Class({
         },
         video: {
             default: null,
-            type: cc.VideoPlayer
+            type: cc.Sprite
         },
         inputUsername: {
             default: null,
@@ -93,10 +97,6 @@ cc.Class({
 
         this.btnPass.on(cc.Node.EventType.TOUCH_END, this.handlePass, this);
 
-        this.video.node.on('ready-to-play', this.handleReady, this);
-        this.video.node.on('clicked', this.handleClick, this);
-        this.video.node.on('completed', this.handleCompleted, this);
-
         this.node.on('nextScene', (evt) => {
             cc.log(evt.detail);
 
@@ -110,17 +110,39 @@ cc.Class({
 
             this.nextScene();
         });
+
+        this.initVideo();
     },
 
     start() {},
 
-    update(dt) {},
+    update(dt) {
+        if (this._isPlay && this._video) {
+            this.getVideoFrame();
+        }
+    },
 
-    // 准备视频
-    handleReady(evt) {
-        const video = evt;
+    // 初始化视频
+    initVideo() {
+        const video = document.getElementById('video');
 
-        video.play();
+        this._video = video;
+
+        this.video.node.on(cc.Node.EventType.TOUCH_END, () => {
+            if (!this._isPlay) {
+                video.play();
+            }
+        }, this);
+
+        video.addEventListener('play', () => {
+            this._isPlay = true;
+        }, false);
+
+        video.addEventListener('ended', () => {
+            this._isPlay = false;
+
+            this.aniBtn('btnPass');
+        }, false);
 
         if (window.WeixinJSBridge) {
             WeixinJSBridge.invoke('getNetworkType', {}, () => {
@@ -135,23 +157,37 @@ cc.Class({
         }
     },
 
-    // 用户点击
-    handleClick(evt) {
-        const video = evt;
+    // 获取视频图片帧
+    getVideoFrame() {
+        const width = video.width;
+        const height = video.height;
 
-        video.play();
+        const canvas = document.createElement('canvas');
+        canvas.width = Number(width);
+        canvas.height = Number(height);
+
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+ 
+        const img = new Image();
+        img.src = canvas.toDataURL('image/jpeg');
+        img.onload = () => {
+            const texture = new cc.Texture2D();
+            texture.initWithElement(img);
+            texture.handleLoadedTexture();
+
+            const spriteFrame = new cc.SpriteFrame(texture);
+
+            this.video.spriteFrame = spriteFrame;
+        }
     },
 
     // 跳过视频
     handlePass(evt) {
-        this.video.destroy();
+        this._isPlay = false;
+        this._video.pause();
 
         this.nextScene();
-    },
-
-    // 播放完成
-    handleCompleted(evt) {
-        this.aniBtn('btnPass');
     },
 
     // 提交表单

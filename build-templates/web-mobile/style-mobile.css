@@ -124,6 +124,12 @@ p.footer {
 }
 
 
+#video{position: absolute; left: 50%; top: 50%; z-index: -1; width: 0; height: 0; opacity: 0;}
+#video{
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
 
 
 
