@@ -13,7 +13,8 @@ var SceneType = cc.Enum({
     JOIN: 2,
     CHOOSE: 3,
     PUZZLE: 4,
-    SUCCEED: 5
+    SUCCEED: 5,
+    LIST: 6
 });
 
 var Scene = cc.Class({
@@ -41,6 +42,8 @@ cc.Class({
         this._video = null;
         // 是否播放
         this._isPlay = false;
+        // 中奖名单
+        this._list = null;
     },
 
 
@@ -84,6 +87,14 @@ cc.Class({
         inputMoblie: {
             default: null,
             type: cc.EditBox
+        },
+        listName: {
+            default: [],
+            type: [cc.Label]
+        },
+        listTel: {
+            default: [],
+            type: [cc.Label]
         }
     },
 
@@ -123,6 +134,13 @@ cc.Class({
         });
 
         this.initVideo();
+
+        // 获取中奖名单
+        cc.loader.load('list.json', function (err, json) {
+            _this._list = json;
+
+            cc.log(err, json);
+        });
     },
     start: function start() {},
     update: function update(dt) {
@@ -203,7 +221,13 @@ cc.Class({
         this._isPlay = false;
         this._video.pause();
 
-        this.nextScene();
+        if (this._list !== null && Object.keys(this._list).length > 0) {
+            this.renderList();
+
+            this.toScene(6);
+        } else {
+            this.nextScene();
+        }
     },
 
 
@@ -289,21 +313,44 @@ cc.Class({
     },
 
 
+    // 渲染中间名单
+    renderList: function renderList() {
+        var _this6 = this;
+
+        Object.keys(this._list).map(function (name, index) {
+            _this6.listName[index].string = name;
+            _this6.listTel[index].string = _this6._list[name];
+        });
+    },
+
+
     // 跳转下一个场景
     nextScene: function nextScene() {
-        var _this6 = this;
+        var _this7 = this;
 
         this._sceneIndex++;
 
         this.scenes.map(function (obj) {
-            obj.node.active = obj.type === _this6._sceneIndex;
+            obj.node.active = obj.type === _this7._sceneIndex;
+        });
+    },
+
+
+    // 跳转指定场景
+    toScene: function toScene(index) {
+        var _this8 = this;
+
+        this._sceneIndex = index;
+
+        this.scenes.map(function (obj) {
+            obj.node.active = obj.type === _this8._sceneIndex;
         });
     },
 
 
     // 跳转上一个场景
     prevScene: function prevScene() {
-        var _this7 = this;
+        var _this9 = this;
 
         this._sceneIndex--;
 
@@ -312,7 +359,7 @@ cc.Class({
         }
 
         this.scenes.map(function (obj) {
-            obj.node.active = obj.type === _this7._sceneIndex;
+            obj.node.active = obj.type === _this9._sceneIndex;
         });
     },
 

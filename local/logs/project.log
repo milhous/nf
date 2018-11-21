@@ -1,73 +1,659 @@
-2018-11-09T13:46:52.992Z - normal: Load ~/.CocosCreator/settings.json
-2018-11-09T13:46:52.995Z - normal: checking language setting...
-2018-11-09T13:46:52.995Z - normal: Language: zh
-2018-11-09T13:46:53.424Z - success: protocol editor-framework registered
-2018-11-09T13:46:53.425Z - success: protocol app registered
-2018-11-09T13:46:53.425Z - success: protocol theme registered
-2018-11-09T13:46:53.425Z - success: protocol packages registered
-2018-11-09T13:46:53.425Z - success: protocol unpack registerred
-2018-11-09T13:46:53.425Z - success: protocol disable-commonjs registerred
-2018-11-09T13:46:53.570Z - normal: connected!
-2018-11-09T13:46:53.572Z - normal: Check project /Users/milhous/Documents/work/cocos/nf
-2018-11-09T13:46:53.586Z - normal: Initializing project /Users/milhous/Documents/work/cocos/nf
-2018-11-09T13:46:53.615Z - normal: Initializing Cocos2d
-2018-11-09T13:46:54.135Z - normal: Initializing Asset Database
-2018-11-09T13:46:54.164Z - success: protocol uuid registerred
-2018-11-09T13:46:54.164Z - success: protocol db registerred
-2018-11-09T13:46:54.164Z - success: protocol thumbnail registerred
-2018-11-09T13:46:54.165Z - normal: Loading editor/builtin packages
-2018-11-09T13:46:54.291Z - success: assets loaded
-2018-11-09T13:46:54.295Z - success: builder loaded
-2018-11-09T13:46:54.296Z - success: cocos-analytics loaded
-2018-11-09T13:46:54.300Z - success: console loaded
-2018-11-09T13:46:54.324Z - success: fb-instant-games loaded
-2018-11-09T13:46:54.326Z - success: google-instant-games loaded
-2018-11-09T13:46:54.330Z - success: hierarchy loaded
-2018-11-09T13:46:54.333Z - success: inspector loaded
-2018-11-09T13:46:54.335Z - success: keystore loaded
-2018-11-09T13:46:54.339Z - success: node-library loaded
-2018-11-09T13:46:54.340Z - success: package-asset loaded
-2018-11-09T13:46:54.342Z - success: preferences loaded
-2018-11-09T13:46:54.344Z - success: project-exporter loaded
-2018-11-09T13:46:54.355Z - success: project-importer loaded
-2018-11-09T13:46:54.357Z - success: project-settings loaded
-2018-11-09T13:46:54.360Z - success: ui-kit loaded
-2018-11-09T13:46:54.363Z - success: scene loaded
-2018-11-09T13:46:54.365Z - success: sprite-editor loaded
-2018-11-09T13:46:54.368Z - success: store loaded
-2018-11-09T13:46:54.372Z - success: timeline loaded
-2018-11-09T13:46:54.372Z - normal: Loading builtin packages
-2018-11-09T13:46:54.404Z - success: asset-db-debugger loaded
-2018-11-09T13:46:54.405Z - success: color-picker loaded
-2018-11-09T13:46:54.473Z - success: google-play-instant loaded
-2018-11-09T13:46:54.481Z - success: jsb-adapter loaded
-2018-11-09T13:46:54.484Z - success: oppo-runtime loaded
-2018-11-09T13:46:54.488Z - success: package-manager loaded
-2018-11-09T13:46:54.572Z - success: qqplay-adapter loaded
-2018-11-09T13:46:54.592Z - success: sdkbox loaded
-2018-11-09T13:46:54.606Z - success: tester loaded
-2018-11-09T13:46:54.610Z - success: ui-grid loaded
-2018-11-09T13:46:54.618Z - success: ui-kit-preview-extra loaded
-2018-11-09T13:46:54.621Z - success: ui-kit-preview loaded
-2018-11-09T13:46:54.624Z - success: ui-tree loaded
-2018-11-09T13:46:54.630Z - success: vivo-runtime loaded
-2018-11-09T13:46:54.654Z - success: weapp-adapter loaded
-2018-11-09T13:46:55.407Z - normal: Loading packages
-2018-11-09T13:46:55.411Z - normal: Watching packages
-2018-11-09T13:46:55.457Z - normal: Run Application
-2018-11-09T13:46:56.082Z - success: preview server running at http://localhost:7456
-2018-11-09T13:47:01.008Z - normal: On the web is always keep the aspect ratio
-2018-11-09T13:51:33.817Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:14:17.386Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:18:42.103Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:21:18.595Z - failed: [db-task][sync-changes] Failed to import asset /Users/milhous/Documents/work/cocos/nf/assets/script/main.js, message: Compile error: SyntaxError: /Users/milhous/Documents/work/cocos/nf/assets/script/main.js: Unexpected token, expected , (154:4)
-  152 | 
-  153 |     // 用户点击
-> 154 |     handleClick(evt) {
+2018-11-21T14:11:29.863Z - normal: Load ~/.CocosCreator/settings.json
+2018-11-21T14:11:29.865Z - normal: checking language setting...
+2018-11-21T14:11:29.865Z - normal: Language: zh
+2018-11-21T14:11:30.296Z - success: protocol editor-framework registered
+2018-11-21T14:11:30.296Z - success: protocol app registered
+2018-11-21T14:11:30.296Z - success: protocol theme registered
+2018-11-21T14:11:30.296Z - success: protocol packages registered
+2018-11-21T14:11:30.296Z - success: protocol unpack registerred
+2018-11-21T14:11:30.296Z - success: protocol disable-commonjs registerred
+2018-11-21T14:11:30.548Z - normal: connected!
+2018-11-21T14:11:30.550Z - normal: Check project /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:11:30.553Z - normal: Initializing project /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:11:30.564Z - normal: Initializing Cocos2d
+2018-11-21T14:11:31.194Z - normal: Initializing Asset Database
+2018-11-21T14:11:31.227Z - success: protocol uuid registerred
+2018-11-21T14:11:31.228Z - success: protocol db registerred
+2018-11-21T14:11:31.228Z - success: protocol thumbnail registerred
+2018-11-21T14:11:31.228Z - normal: Loading editor/builtin packages
+2018-11-21T14:11:31.342Z - success: assets loaded
+2018-11-21T14:11:31.345Z - success: builder loaded
+2018-11-21T14:11:31.346Z - success: cocos-analytics loaded
+2018-11-21T14:11:31.350Z - success: console loaded
+2018-11-21T14:11:31.374Z - success: fb-instant-games loaded
+2018-11-21T14:11:31.376Z - success: google-instant-games loaded
+2018-11-21T14:11:31.381Z - success: hierarchy loaded
+2018-11-21T14:11:31.384Z - success: inspector loaded
+2018-11-21T14:11:31.385Z - success: keystore loaded
+2018-11-21T14:11:31.389Z - success: node-library loaded
+2018-11-21T14:11:31.391Z - success: package-asset loaded
+2018-11-21T14:11:31.392Z - success: preferences loaded
+2018-11-21T14:11:31.394Z - success: project-exporter loaded
+2018-11-21T14:11:31.405Z - success: project-importer loaded
+2018-11-21T14:11:31.407Z - success: project-settings loaded
+2018-11-21T14:11:31.410Z - success: ui-kit loaded
+2018-11-21T14:11:31.413Z - success: scene loaded
+2018-11-21T14:11:31.415Z - success: sprite-editor loaded
+2018-11-21T14:11:31.418Z - success: store loaded
+2018-11-21T14:11:31.422Z - success: timeline loaded
+2018-11-21T14:11:31.422Z - normal: Loading builtin packages
+2018-11-21T14:11:31.478Z - success: asset-db-debugger loaded
+2018-11-21T14:11:31.480Z - success: color-picker loaded
+2018-11-21T14:11:31.546Z - success: google-play-instant loaded
+2018-11-21T14:11:31.564Z - success: jsb-adapter loaded
+2018-11-21T14:11:31.568Z - success: oppo-runtime loaded
+2018-11-21T14:11:31.572Z - success: package-manager loaded
+2018-11-21T14:11:31.654Z - success: qqplay-adapter loaded
+2018-11-21T14:11:31.671Z - success: sdkbox loaded
+2018-11-21T14:11:31.680Z - success: tester loaded
+2018-11-21T14:11:31.684Z - success: ui-grid loaded
+2018-11-21T14:11:31.692Z - success: ui-kit-preview-extra loaded
+2018-11-21T14:11:31.696Z - success: ui-kit-preview loaded
+2018-11-21T14:11:31.699Z - success: ui-tree loaded
+2018-11-21T14:11:31.704Z - success: vivo-runtime loaded
+2018-11-21T14:11:31.712Z - success: weapp-adapter loaded
+2018-11-21T14:11:32.441Z - normal: Loading packages
+2018-11-21T14:11:32.445Z - normal: Watching packages
+2018-11-21T14:11:32.495Z - normal: Run Application
+2018-11-21T14:11:33.128Z - success: preview server running at http://localhost:7456
+2018-11-21T14:24:57.297Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": false,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:24:57.300Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:24:57.300Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:24:57.521Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:24:59.044Z - normal: Start building assets
+2018-11-21T14:24:59.044Z - normal: Start spawn build-worker
+2018-11-21T14:24:59.528Z - normal: Finish spawn build-worker
+2018-11-21T14:24:59.528Z - normal: Start init build-worker
+2018-11-21T14:25:01.748Z - normal: Finish init build-worker
+2018-11-21T14:25:01.748Z - normal: Start build-assets in worker
+2018-11-21T14:25:04.508Z - normal: Finish build-assets in worker
+2018-11-21T14:25:04.510Z - normal: Finish building assets
+2018-11-21T14:25:04.517Z - normal: Start building plugin scripts
+2018-11-21T14:25:04.553Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:25:04.561Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2018-11-21T14:25:04.739Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:25:06.458Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": false,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": true,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:25:06.458Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:25:06.458Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:25:06.459Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:25:07.852Z - normal: Start building assets
+2018-11-21T14:25:07.852Z - normal: Start spawn build-worker
+2018-11-21T14:25:08.341Z - normal: Finish spawn build-worker
+2018-11-21T14:25:08.341Z - normal: Start init build-worker
+2018-11-21T14:25:10.415Z - normal: Finish init build-worker
+2018-11-21T14:25:10.415Z - normal: Start build-assets in worker
+2018-11-21T14:25:13.073Z - normal: Finish build-assets in worker
+2018-11-21T14:25:13.075Z - normal: Finish building assets
+2018-11-21T14:25:13.081Z - normal: Start building plugin scripts
+2018-11-21T14:25:13.116Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:25:13.119Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2018-11-21T14:25:13.276Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:26:47.127Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": true,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:26:47.129Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:26:47.129Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:26:47.130Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:27:03.857Z - normal: Start building assets
+2018-11-21T14:27:03.858Z - normal: Start spawn build-worker
+2018-11-21T14:27:04.334Z - normal: Finish spawn build-worker
+2018-11-21T14:27:04.334Z - normal: Start init build-worker
+2018-11-21T14:27:06.569Z - normal: Finish init build-worker
+2018-11-21T14:27:06.569Z - normal: Start build-assets in worker
+2018-11-21T14:27:09.295Z - normal: Finish build-assets in worker
+2018-11-21T14:27:09.297Z - normal: Finish building assets
+2018-11-21T14:27:09.303Z - normal: Start building plugin scripts
+2018-11-21T14:27:09.338Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:27:09.343Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:27:09.512Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:29:32.493Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:29:32.497Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:29:32.498Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:29:32.498Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:29:34.040Z - normal: Start building assets
+2018-11-21T14:29:34.040Z - normal: Start spawn build-worker
+2018-11-21T14:29:34.557Z - normal: Finish spawn build-worker
+2018-11-21T14:29:34.557Z - normal: Start init build-worker
+2018-11-21T14:29:36.825Z - normal: Finish init build-worker
+2018-11-21T14:29:36.825Z - normal: Start build-assets in worker
+2018-11-21T14:29:39.454Z - normal: Finish build-assets in worker
+2018-11-21T14:29:39.456Z - normal: Finish building assets
+2018-11-21T14:29:39.464Z - normal: Start building plugin scripts
+2018-11-21T14:29:39.498Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:29:39.503Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:29:39.668Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:31:28.223Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:31:28.223Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:31:28.223Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:31:28.224Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:31:29.590Z - normal: Start building assets
+2018-11-21T14:31:29.590Z - normal: Start spawn build-worker
+2018-11-21T14:31:30.267Z - normal: Finish spawn build-worker
+2018-11-21T14:31:30.268Z - normal: Start init build-worker
+2018-11-21T14:31:32.527Z - normal: Finish init build-worker
+2018-11-21T14:31:32.528Z - normal: Start build-assets in worker
+2018-11-21T14:31:35.187Z - normal: Finish build-assets in worker
+2018-11-21T14:31:35.189Z - normal: Finish building assets
+2018-11-21T14:31:35.197Z - normal: Start building plugin scripts
+2018-11-21T14:31:35.231Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:31:35.239Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:31:35.393Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:32:07.833Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:32:07.834Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:32:07.834Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:32:07.834Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:32:09.169Z - normal: Start building assets
+2018-11-21T14:32:09.169Z - normal: Start spawn build-worker
+2018-11-21T14:32:09.652Z - normal: Finish spawn build-worker
+2018-11-21T14:32:09.652Z - normal: Start init build-worker
+2018-11-21T14:32:11.942Z - normal: Finish init build-worker
+2018-11-21T14:32:11.942Z - normal: Start build-assets in worker
+2018-11-21T14:32:15.219Z - normal: Finish build-assets in worker
+2018-11-21T14:32:15.221Z - normal: Finish building assets
+2018-11-21T14:32:15.226Z - normal: Start building plugin scripts
+2018-11-21T14:32:15.259Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:32:15.264Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:32:15.442Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:35:01.395Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:13930
+2018-11-21T14:45:04.526Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:21300
+2018-11-21T14:51:37.010Z - failed: [db-task][sync-changes] Failed to import asset /Users/milhous/Documents/work/cocos/nf/assets/script/main.js, message: Compile error: SyntaxError: /Users/milhous/Documents/work/cocos/nf/assets/script/main.js: Unexpected token, expected , (295:4)
+  293 | 
+  294 |     // 跳转上一个场景
+> 295 |     prevScene() {
       |     ^
-  155 |         const video = evt;
-  156 | 
-  157 |         video.play();
+  296 |         this._sceneIndex--;
+  297 | 
+  298 |         if (this._sceneIndex < 0) {
     at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
     at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
     at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1749:33)
@@ -78,28 +664,12 @@
     at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
     at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
     at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
-2018-11-09T14:21:25.302Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:21:55.787Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:23:20.853Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:27:22.907Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:32:05.915Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:33:24.668Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:24818
-2018-11-09T14:36:11.051Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:36:23.321Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:37:17.841Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:38:11.303Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:39:57.348Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:40:55.665Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:41:35.775Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:42:07.394Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:42:47.052Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:43:16.521Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:44:01.838Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:46:09.838Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:48:07.592Z - normal: On the web is always keep the aspect ratio
-2018-11-09T14:53:40.003Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:35883
-2018-11-09T14:53:40.010Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:35885
-2018-11-09T14:58:47.524Z - normal: Start building with options : {
+2018-11-21T14:53:49.726Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:6208)
+    at EventEmitter.o.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:3753)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-11-21T14:54:08.819Z - normal: Start building with options : {
   "actualPlatform": "web-mobile",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -114,7 +684,7 @@
   "appKey": "",
   "appSecret": "",
   "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
+  "debug": true,
   "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
   "embedWebDebugger": false,
   "encryptJs": true,
@@ -182,22 +752,22 @@
   "projectName": "tnf",
   "debugBuildWorker": false
 }
-2018-11-09T14:58:47.530Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T14:58:47.530Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T14:58:47.803Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T14:58:49.942Z - normal: Start building assets
-2018-11-09T14:58:49.942Z - normal: Start spawn build-worker
-2018-11-09T14:58:50.492Z - normal: Finish spawn build-worker
-2018-11-09T14:58:50.492Z - normal: Start init build-worker
-2018-11-09T14:58:53.447Z - normal: Finish init build-worker
-2018-11-09T14:58:53.448Z - normal: Start build-assets in worker
-2018-11-09T14:58:56.552Z - normal: Finish build-assets in worker
-2018-11-09T14:58:56.556Z - normal: Finish building assets
-2018-11-09T14:58:56.566Z - normal: Start building plugin scripts
-2018-11-09T14:58:56.610Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T14:58:56.614Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T14:58:56.832Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:00:37.157Z - normal: Start building with options : {
+2018-11-21T14:54:08.821Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:54:08.822Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:54:08.823Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:54:10.256Z - normal: Start building assets
+2018-11-21T14:54:10.256Z - normal: Start spawn build-worker
+2018-11-21T14:54:10.742Z - normal: Finish spawn build-worker
+2018-11-21T14:54:10.742Z - normal: Start init build-worker
+2018-11-21T14:54:12.970Z - normal: Finish init build-worker
+2018-11-21T14:54:12.971Z - normal: Start build-assets in worker
+2018-11-21T14:54:15.995Z - normal: Finish build-assets in worker
+2018-11-21T14:54:15.997Z - normal: Finish building assets
+2018-11-21T14:54:16.003Z - normal: Start building plugin scripts
+2018-11-21T14:54:16.039Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:54:16.044Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:54:16.267Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:55:32.259Z - normal: Start building with options : {
   "actualPlatform": "web-mobile",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -212,7 +782,7 @@
   "appKey": "",
   "appSecret": "",
   "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
+  "debug": true,
   "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
   "embedWebDebugger": false,
   "encryptJs": true,
@@ -280,22 +850,22 @@
   "projectName": "tnf",
   "debugBuildWorker": false
 }
-2018-11-09T15:00:37.163Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:00:37.164Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:00:37.167Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:00:39.172Z - normal: Start building assets
-2018-11-09T15:00:39.172Z - normal: Start spawn build-worker
-2018-11-09T15:00:39.751Z - normal: Finish spawn build-worker
-2018-11-09T15:00:39.751Z - normal: Start init build-worker
-2018-11-09T15:00:42.424Z - normal: Finish init build-worker
-2018-11-09T15:00:42.425Z - normal: Start build-assets in worker
-2018-11-09T15:00:46.004Z - normal: Finish build-assets in worker
-2018-11-09T15:00:46.007Z - normal: Finish building assets
-2018-11-09T15:00:46.021Z - normal: Start building plugin scripts
-2018-11-09T15:00:46.062Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:00:46.068Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:00:46.208Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:01:52.195Z - normal: Start building with options : {
+2018-11-21T14:55:32.261Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:55:32.262Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:55:32.262Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:55:33.673Z - normal: Start building assets
+2018-11-21T14:55:33.673Z - normal: Start spawn build-worker
+2018-11-21T14:55:34.158Z - normal: Finish spawn build-worker
+2018-11-21T14:55:34.158Z - normal: Start init build-worker
+2018-11-21T14:55:36.415Z - normal: Finish init build-worker
+2018-11-21T14:55:36.415Z - normal: Start build-assets in worker
+2018-11-21T14:55:39.182Z - normal: Finish build-assets in worker
+2018-11-21T14:55:39.185Z - normal: Finish building assets
+2018-11-21T14:55:39.192Z - normal: Start building plugin scripts
+2018-11-21T14:55:39.229Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:55:39.234Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:55:39.435Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:56:42.718Z - normal: Start building with options : {
   "actualPlatform": "web-mobile",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -310,7 +880,7 @@
   "appKey": "",
   "appSecret": "",
   "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
+  "debug": true,
   "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
   "embedWebDebugger": false,
   "encryptJs": true,
@@ -378,29 +948,323 @@
   "projectName": "tnf",
   "debugBuildWorker": false
 }
-2018-11-09T15:01:52.200Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:01:52.200Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:01:52.201Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:01:54.120Z - normal: Start building assets
-2018-11-09T15:01:54.121Z - normal: Start spawn build-worker
-2018-11-09T15:01:54.639Z - normal: Finish spawn build-worker
-2018-11-09T15:01:54.639Z - normal: Start init build-worker
-2018-11-09T15:01:57.487Z - normal: Finish init build-worker
-2018-11-09T15:01:57.487Z - normal: Start build-assets in worker
-2018-11-09T15:02:00.345Z - normal: Finish build-assets in worker
-2018-11-09T15:02:00.347Z - normal: Finish building assets
-2018-11-09T15:02:00.356Z - normal: Start building plugin scripts
-2018-11-09T15:02:00.393Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:02:00.397Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:02:00.539Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:07:06.942Z - failed: [db-task][sync-changes] Failed to import asset /Users/milhous/Documents/work/cocos/nf/assets/script/main.js, message: Compile error: SyntaxError: /Users/milhous/Documents/work/cocos/nf/assets/script/main.js: Unexpected token, expected , (145:4)
-  143 | 
-  144 |     // 获取视频图片帧
-> 145 |     getVideoFrame(video) {
+2018-11-21T14:56:42.718Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:56:42.718Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:56:42.719Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:56:44.120Z - normal: Start building assets
+2018-11-21T14:56:44.120Z - normal: Start spawn build-worker
+2018-11-21T14:56:44.606Z - normal: Finish spawn build-worker
+2018-11-21T14:56:44.606Z - normal: Start init build-worker
+2018-11-21T14:56:46.890Z - normal: Finish init build-worker
+2018-11-21T14:56:46.890Z - normal: Start build-assets in worker
+2018-11-21T14:56:49.686Z - normal: Finish build-assets in worker
+2018-11-21T14:56:49.689Z - normal: Finish building assets
+2018-11-21T14:56:49.695Z - normal: Start building plugin scripts
+2018-11-21T14:56:49.727Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:56:49.730Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:56:49.933Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T14:59:16.743Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T14:59:16.746Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T14:59:16.746Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T14:59:16.747Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T14:59:18.086Z - normal: Start building assets
+2018-11-21T14:59:18.086Z - normal: Start spawn build-worker
+2018-11-21T14:59:18.575Z - normal: Finish spawn build-worker
+2018-11-21T14:59:18.575Z - normal: Start init build-worker
+2018-11-21T14:59:20.862Z - normal: Finish init build-worker
+2018-11-21T14:59:20.862Z - normal: Start build-assets in worker
+2018-11-21T14:59:23.596Z - normal: Finish build-assets in worker
+2018-11-21T14:59:23.598Z - normal: Finish building assets
+2018-11-21T14:59:23.604Z - normal: Start building plugin scripts
+2018-11-21T14:59:23.639Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T14:59:23.644Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T14:59:23.819Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:00:30.806Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T15:00:30.810Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:00:30.810Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:00:30.811Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:00:32.182Z - normal: Start building assets
+2018-11-21T15:00:32.182Z - normal: Start spawn build-worker
+2018-11-21T15:00:32.682Z - normal: Finish spawn build-worker
+2018-11-21T15:00:32.682Z - normal: Start init build-worker
+2018-11-21T15:00:34.934Z - normal: Finish init build-worker
+2018-11-21T15:00:34.935Z - normal: Start build-assets in worker
+2018-11-21T15:00:37.996Z - normal: Finish build-assets in worker
+2018-11-21T15:00:37.999Z - normal: Finish building assets
+2018-11-21T15:00:38.005Z - normal: Start building plugin scripts
+2018-11-21T15:00:38.041Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:00:38.046Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:00:38.232Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:01:58.272Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T15:01:58.273Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:01:58.273Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:01:58.273Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:01:59.558Z - normal: Start building assets
+2018-11-21T15:01:59.559Z - normal: Start spawn build-worker
+2018-11-21T15:02:00.032Z - normal: Finish spawn build-worker
+2018-11-21T15:02:00.032Z - normal: Start init build-worker
+2018-11-21T15:02:02.252Z - normal: Finish init build-worker
+2018-11-21T15:02:02.252Z - normal: Start build-assets in worker
+2018-11-21T15:02:04.989Z - normal: Finish build-assets in worker
+2018-11-21T15:02:04.991Z - normal: Finish building assets
+2018-11-21T15:02:04.998Z - normal: Start building plugin scripts
+2018-11-21T15:02:05.030Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:02:05.033Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:02:05.206Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:06:56.735Z - failed: [db-task][sync-changes] Failed to import asset /Users/milhous/Documents/work/cocos/nf/assets/script/main.js, message: Compile error: SyntaxError: /Users/milhous/Documents/work/cocos/nf/assets/script/main.js: Unexpected token, expected , (299:4)
+  297 | 
+  298 |     // 跳转下一个场景
+> 299 |     nextScene() {
       |     ^
-  146 |         const width = video.style.width.replace('px', '');
-  147 |         const height = video.style.height.replace('px', '');
-  148 | 
+  300 |         this._sceneIndex++;
+  301 | 
+  302 |         this.scenes.map((obj) => {
     at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
     at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
     at Parser.pp.expect (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1749:33)
@@ -411,301 +1275,7 @@
     at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
     at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
     at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
-2018-11-09T15:07:17.314Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:07:17.317Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:07:17.317Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:07:17.318Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:07:19.273Z - normal: Start building assets
-2018-11-09T15:07:19.273Z - normal: Start spawn build-worker
-2018-11-09T15:07:19.899Z - normal: Finish spawn build-worker
-2018-11-09T15:07:19.899Z - normal: Start init build-worker
-2018-11-09T15:07:22.483Z - normal: Finish init build-worker
-2018-11-09T15:07:22.483Z - normal: Start build-assets in worker
-2018-11-09T15:07:25.327Z - normal: Finish build-assets in worker
-2018-11-09T15:07:25.330Z - normal: Finish building assets
-2018-11-09T15:07:25.337Z - normal: Start building plugin scripts
-2018-11-09T15:07:25.374Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:07:25.380Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:07:25.512Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:08:32.139Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:08:32.141Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:08:32.142Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:08:32.142Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:08:33.934Z - normal: Start building assets
-2018-11-09T15:08:33.934Z - normal: Start spawn build-worker
-2018-11-09T15:08:34.538Z - normal: Finish spawn build-worker
-2018-11-09T15:08:34.538Z - normal: Start init build-worker
-2018-11-09T15:08:37.504Z - normal: Finish init build-worker
-2018-11-09T15:08:37.504Z - normal: Start build-assets in worker
-2018-11-09T15:08:40.381Z - normal: Finish build-assets in worker
-2018-11-09T15:08:40.383Z - normal: Finish building assets
-2018-11-09T15:08:40.391Z - normal: Start building plugin scripts
-2018-11-09T15:08:40.430Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:08:40.434Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:08:40.569Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:09:57.409Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": true,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:09:57.412Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:09:57.412Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:09:57.414Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:09:58.972Z - normal: Start building assets
-2018-11-09T15:09:58.972Z - normal: Start spawn build-worker
-2018-11-09T15:09:59.482Z - normal: Finish spawn build-worker
-2018-11-09T15:09:59.482Z - normal: Start init build-worker
-2018-11-09T15:10:01.915Z - normal: Finish init build-worker
-2018-11-09T15:10:01.915Z - normal: Start build-assets in worker
-2018-11-09T15:10:04.698Z - normal: Finish build-assets in worker
-2018-11-09T15:10:04.703Z - normal: Finish building assets
-2018-11-09T15:10:04.711Z - normal: Start building plugin scripts
-2018-11-09T15:10:04.750Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:10:04.755Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:10:04.889Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:11:22.920Z - normal: Start building with options : {
+2018-11-21T15:07:14.830Z - normal: Start building with options : {
   "actualPlatform": "web-mobile",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -722,7 +1292,400 @@
   "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
   "debug": true,
   "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": true,
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T15:07:14.831Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:07:14.832Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:07:14.832Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:07:16.245Z - normal: Start building assets
+2018-11-21T15:07:16.245Z - normal: Start spawn build-worker
+2018-11-21T15:07:16.737Z - normal: Finish spawn build-worker
+2018-11-21T15:07:16.737Z - normal: Start init build-worker
+2018-11-21T15:07:18.988Z - normal: Finish init build-worker
+2018-11-21T15:07:18.988Z - normal: Start build-assets in worker
+2018-11-21T15:07:21.829Z - normal: Finish build-assets in worker
+2018-11-21T15:07:21.832Z - normal: Finish building assets
+2018-11-21T15:07:21.838Z - normal: Start building plugin scripts
+2018-11-21T15:07:21.874Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:07:21.880Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:07:22.047Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:08:21.813Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T15:08:21.814Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:08:21.814Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:08:21.814Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:08:23.164Z - normal: Start building assets
+2018-11-21T15:08:23.164Z - normal: Start spawn build-worker
+2018-11-21T15:08:23.756Z - normal: Finish spawn build-worker
+2018-11-21T15:08:23.756Z - normal: Start init build-worker
+2018-11-21T15:08:26.101Z - normal: Finish init build-worker
+2018-11-21T15:08:26.102Z - normal: Start build-assets in worker
+2018-11-21T15:08:28.736Z - normal: Finish build-assets in worker
+2018-11-21T15:08:28.739Z - normal: Finish building assets
+2018-11-21T15:08:28.744Z - normal: Start building plugin scripts
+2018-11-21T15:08:28.778Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:08:28.785Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:08:29.078Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:09:34.307Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:29848
+2018-11-21T15:10:32.756Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T15:10:32.758Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:10:32.758Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:10:32.759Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:10:34.310Z - normal: Start building assets
+2018-11-21T15:10:34.311Z - normal: Start spawn build-worker
+2018-11-21T15:10:34.794Z - normal: Finish spawn build-worker
+2018-11-21T15:10:34.794Z - normal: Start init build-worker
+2018-11-21T15:10:37.086Z - normal: Finish init build-worker
+2018-11-21T15:10:37.086Z - normal: Start build-assets in worker
+2018-11-21T15:10:39.867Z - normal: Finish build-assets in worker
+2018-11-21T15:10:39.870Z - normal: Finish building assets
+2018-11-21T15:10:39.878Z - normal: Start building plugin scripts
+2018-11-21T15:10:39.919Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:10:39.924Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:10:40.077Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:16:11.336Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [
+    "Mask",
+    "ParticleSystem",
+    "TiledMap",
+    "Spine Skeleton",
+    "DragonBones",
+    "ProgressBar",
+    "ScrollBar",
+    "ScrollView",
+    "Toggle",
+    "PageView",
+    "PageViewIndicator",
+    "Slider",
+    "Physics"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.tnf",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "scenes": [
+    "b19ef446-c737-4db1-afd3-824d792fa10e"
+  ],
+  "sourceMaps": false,
+  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
+  "template": "link",
+  "title": "tnf",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "portrait",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "a4586279-4c05-4a",
+  "zipCompressJs": true,
+  "project": "/Users/milhous/Documents/work/cocos/nf",
+  "projectName": "tnf",
+  "debugBuildWorker": false
+}
+2018-11-21T15:16:11.340Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:16:11.340Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:16:11.342Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:16:12.746Z - normal: Start building assets
+2018-11-21T15:16:12.746Z - normal: Start spawn build-worker
+2018-11-21T15:16:13.242Z - normal: Finish spawn build-worker
+2018-11-21T15:16:13.243Z - normal: Start init build-worker
+2018-11-21T15:16:15.573Z - normal: Finish init build-worker
+2018-11-21T15:16:15.573Z - normal: Start build-assets in worker
+2018-11-21T15:16:18.393Z - normal: Finish build-assets in worker
+2018-11-21T15:16:18.396Z - normal: Finish building assets
+2018-11-21T15:16:18.403Z - normal: Start building plugin scripts
+2018-11-21T15:16:18.439Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:16:18.443Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:16:18.654Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:17:19.787Z - normal: Start building with options : {
+  "actualPlatform": "web-mobile",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
+  "debug": true,
+  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
+  "embedWebDebugger": false,
   "encryptJs": true,
   "excludeScenes": [],
   "excludedModules": [
@@ -788,218 +1751,24 @@
   "projectName": "tnf",
   "debugBuildWorker": false
 }
-2018-11-09T15:11:22.922Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:11:22.922Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:11:22.923Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:11:24.725Z - normal: Start building assets
-2018-11-09T15:11:24.726Z - normal: Start spawn build-worker
-2018-11-09T15:11:25.219Z - normal: Finish spawn build-worker
-2018-11-09T15:11:25.219Z - normal: Start init build-worker
-2018-11-09T15:11:27.617Z - normal: Finish init build-worker
-2018-11-09T15:11:27.617Z - normal: Start build-assets in worker
-2018-11-09T15:11:30.370Z - normal: Finish build-assets in worker
-2018-11-09T15:11:30.373Z - normal: Finish building assets
-2018-11-09T15:11:30.379Z - normal: Start building plugin scripts
-2018-11-09T15:11:30.413Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:11:30.427Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
-2018-11-09T15:11:30.560Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:15:04.166Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": true,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": true,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": true,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:15:04.171Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:15:04.172Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:15:04.173Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:15:06.224Z - normal: Start building assets
-2018-11-09T15:15:06.224Z - normal: Start spawn build-worker
-2018-11-09T15:15:06.725Z - normal: Finish spawn build-worker
-2018-11-09T15:15:06.725Z - normal: Start init build-worker
-2018-11-09T15:15:09.100Z - normal: Finish init build-worker
-2018-11-09T15:15:09.100Z - normal: Start build-assets in worker
-2018-11-09T15:15:12.040Z - normal: Finish build-assets in worker
-2018-11-09T15:15:12.043Z - normal: Finish building assets
-2018-11-09T15:15:12.050Z - normal: Start building plugin scripts
-2018-11-09T15:15:12.085Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:15:12.092Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
-2018-11-09T15:15:12.223Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:19:27.297Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": true,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": true,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": true,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:19:27.302Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:19:27.302Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:19:27.303Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:19:29.086Z - normal: Start building assets
-2018-11-09T15:19:29.086Z - normal: Start spawn build-worker
-2018-11-09T15:19:29.581Z - normal: Finish spawn build-worker
-2018-11-09T15:19:29.581Z - normal: Start init build-worker
-2018-11-09T15:19:32.049Z - normal: Finish init build-worker
-2018-11-09T15:19:32.049Z - normal: Start build-assets in worker
-2018-11-09T15:19:34.847Z - normal: Finish build-assets in worker
-2018-11-09T15:19:34.849Z - normal: Finish building assets
-2018-11-09T15:19:34.855Z - normal: Start building plugin scripts
-2018-11-09T15:19:34.891Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:19:34.896Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
-2018-11-09T15:19:35.032Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:20:21.557Z - normal: Start building with options : {
+2018-11-21T15:17:19.788Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:17:19.788Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:17:19.788Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:17:35.470Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:35695
+2018-11-21T15:17:48.222Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:35718
+2018-11-21T15:17:49.716Z - normal: Start building assets
+2018-11-21T15:17:49.717Z - normal: Start spawn build-worker
+2018-11-21T15:17:50.202Z - normal: Finish spawn build-worker
+2018-11-21T15:17:50.203Z - normal: Start init build-worker
+2018-11-21T15:17:52.533Z - normal: Finish init build-worker
+2018-11-21T15:17:52.533Z - normal: Start build-assets in worker
+2018-11-21T15:17:55.340Z - normal: Finish build-assets in worker
+2018-11-21T15:17:55.342Z - normal: Finish building assets
+2018-11-21T15:17:55.349Z - normal: Start building plugin scripts
+2018-11-21T15:17:55.384Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:17:55.390Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template-dev/index.html
+2018-11-21T15:17:55.562Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:19:53.745Z - normal: Start building with options : {
   "actualPlatform": "web-mobile",
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
@@ -1082,606 +1851,18 @@
   "projectName": "tnf",
   "debugBuildWorker": false
 }
-2018-11-09T15:20:21.561Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:20:21.561Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:20:21.561Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:20:23.093Z - normal: Start building assets
-2018-11-09T15:20:23.093Z - normal: Start spawn build-worker
-2018-11-09T15:20:23.629Z - normal: Finish spawn build-worker
-2018-11-09T15:20:23.629Z - normal: Start init build-worker
-2018-11-09T15:20:25.991Z - normal: Finish init build-worker
-2018-11-09T15:20:25.991Z - normal: Start build-assets in worker
-2018-11-09T15:20:28.812Z - normal: Finish build-assets in worker
-2018-11-09T15:20:28.815Z - normal: Finish building assets
-2018-11-09T15:20:28.821Z - normal: Start building plugin scripts
-2018-11-09T15:20:28.855Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:20:28.858Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:20:28.996Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:22:05.928Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:22:05.931Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:22:05.932Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:22:05.934Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:22:07.481Z - normal: Start building assets
-2018-11-09T15:22:07.482Z - normal: Start spawn build-worker
-2018-11-09T15:22:07.977Z - normal: Finish spawn build-worker
-2018-11-09T15:22:07.977Z - normal: Start init build-worker
-2018-11-09T15:22:10.296Z - normal: Finish init build-worker
-2018-11-09T15:22:10.296Z - normal: Start build-assets in worker
-2018-11-09T15:22:13.054Z - normal: Finish build-assets in worker
-2018-11-09T15:22:13.057Z - normal: Finish building assets
-2018-11-09T15:22:13.065Z - normal: Start building plugin scripts
-2018-11-09T15:22:13.102Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:22:13.107Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:22:13.245Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:29:04.284Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:29:04.286Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:29:04.286Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:29:04.287Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:29:05.819Z - normal: Start building assets
-2018-11-09T15:29:05.819Z - normal: Start spawn build-worker
-2018-11-09T15:29:06.310Z - normal: Finish spawn build-worker
-2018-11-09T15:29:06.310Z - normal: Start init build-worker
-2018-11-09T15:29:08.784Z - normal: Finish init build-worker
-2018-11-09T15:29:08.785Z - normal: Start build-assets in worker
-2018-11-09T15:29:11.616Z - normal: Finish build-assets in worker
-2018-11-09T15:29:11.619Z - normal: Finish building assets
-2018-11-09T15:29:11.626Z - normal: Start building plugin scripts
-2018-11-09T15:29:11.665Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:29:11.670Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:29:11.820Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:30:12.414Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:30:12.417Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:30:12.417Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:30:12.418Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:30:14.007Z - normal: Start building assets
-2018-11-09T15:30:14.007Z - normal: Start spawn build-worker
-2018-11-09T15:30:14.515Z - normal: Finish spawn build-worker
-2018-11-09T15:30:14.515Z - normal: Start init build-worker
-2018-11-09T15:30:16.953Z - normal: Finish init build-worker
-2018-11-09T15:30:16.953Z - normal: Start build-assets in worker
-2018-11-09T15:30:19.916Z - normal: Finish build-assets in worker
-2018-11-09T15:30:19.918Z - normal: Finish building assets
-2018-11-09T15:30:19.925Z - normal: Start building plugin scripts
-2018-11-09T15:30:19.961Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:30:19.965Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:30:20.105Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:32:42.929Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:32:42.934Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:32:42.934Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:32:42.935Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:32:44.452Z - normal: Start building assets
-2018-11-09T15:32:44.452Z - normal: Start spawn build-worker
-2018-11-09T15:32:44.922Z - normal: Finish spawn build-worker
-2018-11-09T15:32:44.922Z - normal: Start init build-worker
-2018-11-09T15:32:47.225Z - normal: Finish init build-worker
-2018-11-09T15:32:47.225Z - normal: Start build-assets in worker
-2018-11-09T15:32:49.900Z - normal: Finish build-assets in worker
-2018-11-09T15:32:49.902Z - normal: Finish building assets
-2018-11-09T15:32:49.908Z - normal: Start building plugin scripts
-2018-11-09T15:32:49.946Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:32:49.951Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:32:50.076Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:34:14.087Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:34:14.089Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:34:14.090Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:34:14.090Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:34:15.596Z - normal: Start building assets
-2018-11-09T15:34:15.597Z - normal: Start spawn build-worker
-2018-11-09T15:34:16.145Z - normal: Finish spawn build-worker
-2018-11-09T15:34:16.146Z - normal: Start init build-worker
-2018-11-09T15:34:18.384Z - normal: Finish init build-worker
-2018-11-09T15:34:18.384Z - normal: Start build-assets in worker
-2018-11-09T15:34:21.046Z - normal: Finish build-assets in worker
-2018-11-09T15:34:21.048Z - normal: Finish building assets
-2018-11-09T15:34:21.055Z - normal: Start building plugin scripts
-2018-11-09T15:34:21.092Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:34:21.096Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:34:21.237Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
-2018-11-09T15:35:33.786Z - normal: Start building with options : {
-  "actualPlatform": "web-mobile",
-  "android-instant": {
-    "REMOTE_SERVER_ROOT": "",
-    "host": "",
-    "pathPattern": "",
-    "recordPath": "",
-    "scheme": "https",
-    "skipRecord": false
-  },
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "/Users/milhous/Documents/work/cocos/nf/build",
-  "debug": false,
-  "dest": "/Users/milhous/Documents/work/cocos/nf/build/web-mobile",
-  "embedWebDebugger": false,
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [
-    "Mask",
-    "ParticleSystem",
-    "TiledMap",
-    "Spine Skeleton",
-    "DragonBones",
-    "ProgressBar",
-    "ScrollBar",
-    "ScrollView",
-    "Toggle",
-    "PageView",
-    "PageViewIndicator",
-    "Slider",
-    "Physics"
-  ],
-  "fb-instant-games": {},
-  "includeAnySDK": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.tnf",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "qqplay": {
-    "REMOTE_SERVER_ROOT": "",
-    "orientation": "portrait"
-  },
-  "scenes": [
-    "b19ef446-c737-4db1-afd3-824d792fa10e"
-  ],
-  "sourceMaps": false,
-  "startScene": "b19ef446-c737-4db1-afd3-824d792fa10e",
-  "template": "link",
-  "title": "tnf",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "portrait",
-  "wechatgame": {
-    "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
-    "isSubdomain": false,
-    "orientation": "portrait",
-    "subContext": ""
-  },
-  "xxteaKey": "a4586279-4c05-4a",
-  "zipCompressJs": true,
-  "project": "/Users/milhous/Documents/work/cocos/nf",
-  "projectName": "tnf",
-  "debugBuildWorker": false
-}
-2018-11-09T15:35:33.788Z - normal: Building /Users/milhous/Documents/work/cocos/nf
-2018-11-09T15:35:33.789Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
-2018-11-09T15:35:33.789Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
-2018-11-09T15:35:35.494Z - normal: Start building assets
-2018-11-09T15:35:35.495Z - normal: Start spawn build-worker
-2018-11-09T15:35:36.033Z - normal: Finish spawn build-worker
-2018-11-09T15:35:36.033Z - normal: Start init build-worker
-2018-11-09T15:35:38.417Z - normal: Finish init build-worker
-2018-11-09T15:35:38.418Z - normal: Start build-assets in worker
-2018-11-09T15:35:41.273Z - normal: Finish build-assets in worker
-2018-11-09T15:35:41.276Z - normal: Finish building assets
-2018-11-09T15:35:41.282Z - normal: Start building plugin scripts
-2018-11-09T15:35:41.319Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-11-09T15:35:41.323Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
-2018-11-09T15:35:41.469Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully
+2018-11-21T15:19:53.750Z - normal: Building /Users/milhous/Documents/work/cocos/nf
+2018-11-21T15:19:53.750Z - normal: Destination /Users/milhous/Documents/work/cocos/nf/build/web-mobile
+2018-11-21T15:19:53.751Z - normal: Delete /Users/milhous/Documents/work/cocos/nf/build/web-mobile/**/*
+2018-11-21T15:19:55.225Z - normal: Start building assets
+2018-11-21T15:19:55.226Z - normal: Start spawn build-worker
+2018-11-21T15:19:55.719Z - normal: Finish spawn build-worker
+2018-11-21T15:19:55.719Z - normal: Start init build-worker
+2018-11-21T15:19:57.950Z - normal: Finish init build-worker
+2018-11-21T15:19:57.950Z - normal: Start build-assets in worker
+2018-11-21T15:20:01.181Z - normal: Finish build-assets in worker
+2018-11-21T15:20:01.184Z - normal: Finish building assets
+2018-11-21T15:20:01.190Z - normal: Start building plugin scripts
+2018-11-21T15:20:01.226Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-11-21T15:20:01.230Z - normal: Generating html from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/web-mobile/template/index.html
+2018-11-21T15:20:01.392Z - normal: Built to "/Users/milhous/Documents/work/cocos/nf/build/web-mobile" successfully

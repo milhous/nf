@@ -270,8 +270,8 @@
     "relativePath": "texture/autoAtlas"
   },
   "b19ef446-c737-4db1-afd3-824d792fa10e": {
-    "asset": 1541775302249,
-    "meta": 1541775302261,
+    "asset": 1542813026300,
+    "meta": 1542813026309,
     "relativePath": "scene/main.fire"
   },
   "c123ab29-16e7-448b-8ff1-2ce0c2677bff": {
@@ -539,9 +539,19 @@
     "meta": 1541694891798,
     "relativePath": "texture/autoAtlas/word-scene2_1.png"
   },
+  "4811c297-55fc-433b-a777-4c5ada63cf06": {
+    "asset": 1542811051748,
+    "meta": 1542811089127,
+    "relativePath": "texture/autoAtlas/word-scene6_2.png"
+  },
+  "225bfccf-15c0-4034-8f7f-475caa08e3ee": {
+    "asset": 1542811027684,
+    "meta": 1542811089128,
+    "relativePath": "texture/autoAtlas/word-scene6_1.png"
+  },
   "d793d277-32f1-4087-a97c-bd86741d508d": {
-    "asset": 1541777730347,
-    "meta": 1541777732310,
+    "asset": 1542812895227,
+    "meta": 1542812900636,
     "relativePath": "script/main.js"
   }
 }

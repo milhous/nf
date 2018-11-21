@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "word-scene6_2",
+    "texture": "4811c297-55fc-433b-a777-4c5ada63cf06",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      527,
+      69
+    ],
+    "offset": [
+      -0.5,
+      -0.5
+    ],
+    "originalSize": [
+      530,
+      70
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

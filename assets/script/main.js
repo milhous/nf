@@ -5,7 +5,8 @@ const SceneType = cc.Enum({
     JOIN: 2,
     CHOOSE: 3,
     PUZZLE: 4,
-    SUCCEED: 5
+    SUCCEED: 5,
+    LIST: 6
 });
 
 const Scene = cc.Class({
@@ -33,6 +34,8 @@ cc.Class({
         this._video = null;
         // 是否播放
         this._isPlay = false;
+        // 中奖名单
+        this._list = null;
     },
 
     properties: {
@@ -75,6 +78,14 @@ cc.Class({
         inputMoblie: {
             default: null,
             type: cc.EditBox
+        },
+        listName: {
+            default: [],
+            type: [cc.Label]
+        },
+        listTel: {
+            default: [],
+            type: [cc.Label]
         }
     },
 
@@ -112,6 +123,13 @@ cc.Class({
         });
 
         this.initVideo();
+
+        // 获取中奖名单
+        cc.loader.load('list.json', (err, json) => {
+            this._list = json;
+
+            cc.log(err, json);
+        });
     },
 
     start() {},
@@ -168,7 +186,7 @@ cc.Class({
 
         const ctx = canvas.getContext('2d');
         ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
- 
+
         const img = new Image();
         img.src = canvas.toDataURL('image/jpeg');
         img.onload = () => {
@@ -187,7 +205,13 @@ cc.Class({
         this._isPlay = false;
         this._video.pause();
 
-        this.nextScene();
+        if (this._list !== null && Object.keys(this._list).length > 0) {
+            this.renderList();
+
+            this.toScene(6);
+        } else {
+            this.nextScene();
+        }
     },
 
     // 提交表单
@@ -263,9 +287,26 @@ cc.Class({
         });
     },
 
+    // 渲染中间名单
+    renderList() {
+        Object.keys(this._list).map((name, index) => {
+            this.listName[index].string = name;
+            this.listTel[index].string = this._list[name];
+        });
+    },
+
     // 跳转下一个场景
     nextScene() {
         this._sceneIndex++;
+
+        this.scenes.map((obj) => {
+            obj.node.active = obj.type === this._sceneIndex;
+        });
+    },
+
+    // 跳转指定场景
+    toScene(index) {
+        this._sceneIndex = index;
 
         this.scenes.map((obj) => {
             obj.node.active = obj.type === this._sceneIndex;
